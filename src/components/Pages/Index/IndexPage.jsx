@@ -2,44 +2,44 @@ var React = require('react');
 var CalcTable = require('../../CalcTable/CalcTable.jsx');
 
 var advertiserInfo=[
-  [{type:'cell', text:'Advertiser Name', color: '#faf0e6'},{type:'input', name:'company_name', placeholder:''}],
-  [{type:'cell', text:'Desktop Site Visitors', color: '#faf0e6'},{type:'input', name:'desktop_site_visitors', placeholder:''}],
-  [{type:'cell', text:'Desktop Conversion Rate', color: '#faf0e6'},{type:'input', name:'desktop_conversion_rate', placeholder:'Must Be Whole #'}],
-  [{type:'cell', text:'Average Order Value', color: '#faf0e6'},{type:'input', name:'aov', placeholder:''}],
-  [{type:'cell', text:'Mobile Users', color: '#faf0e6'},{type:'input', name:'mobile_users', placeholder:''}],
-  [{type:'cell', text:'Mobile Conversion Rate', color: '#faf0e6'},{type:'input', name:'mobile_conv_rate', placeholder:''}],
-  [{type:'cell', text:'Attribution Rate', color: '#faf0e6'},{type:'input', name:'attribution_rate', placeholder:''}]
+  [{type:'cell', text:'Advertiser Name', color: '#ECECEC'},{type:'input', name:'company_name', placeholder:''}],
+  [{type:'cell', text:'Desktop Site Visitors', color: '#ECECEC'},{type:'input', name:'desktop_site_visitors', placeholder:''}],
+  [{type:'cell', text:'Desktop Conversion Rate', color: '#ECECEC'},{type:'input', name:'desktop_conversion_rate', placeholder:'Must Be Whole #'}],
+  [{type:'cell', text:'Average Order Value', color: '#ECECEC'},{type:'input', name:'aov', placeholder:''}],
+  [{type:'cell', text:'Mobile Users', color: '#ECECEC'},{type:'input', name:'mobile_users', placeholder:''}],
+  [{type:'cell', text:'Mobile Conversion Rate', color: '#ECECEC'},{type:'input', name:'mobile_conv_rate', placeholder:''}],
+  [{type:'cell', text:'Attribution Rate', color: '#ECECEC'},{type:'input', name:'attribution_rate', placeholder:''}]
 ];
 var rateHeaders = ["Rate Topic","SH CPM","Recommeded CPM"];
 var rateCard=[
-  [{type:'cell', text:'Web Retargeting', color: '#faf0e6'},{type:'input', name:'web_retargeting', placeholder:''},{type:'cell', text:'$2.25-$4.50', color: 'transparent'}],
-  [{type:'cell', text:'Prospecting', color: '#faf0e6'},{type:'input', name:'prospecting', placeholder:''},{type:'cell', text:'$1.50-$3.50', color: 'transparent'}],
-  [{type:'cell', text:'FB Desktop INF', color: '#faf0e6'},{type:'input', name:'fb_desktop_inf', placeholder:''},{type:'cell', text:'$8.00-$12.00', color: 'transparent'}],
-  [{type:'cell', text:'FB Mobile INF', color: '#faf0e6'},{type:'input', name:'fb_mobile_inf', placeholder:''},{type:'cell', text:'$6.00-$9.00', color: 'transparent'}],
-  [{type:'cell', text:'FB RHC', color: '#faf0e6'},{type:'input', name:'fb_rhc', placeholder:''},{type:'cell', text:'$21.00-$2.00'}],
-  [{type:'cell', text:'Mobile Retargeting', color: '#faf0e6'},{type:'input', name:'mobile Retargeting', placeholder:''},{type:'cell', text:'$2.25-$4.50'}]
+  [{type:'cell', text:'Web Retargeting', color: '#ECECEC'},{type:'input', name:'web_retargeting', placeholder:''},{type:'cell', text:'$2.25-$4.50', color: 'transparent'}],
+  [{type:'cell', text:'Prospecting', color: '#ECECEC'},{type:'input', name:'prospecting', placeholder:''},{type:'cell', text:'$1.50-$3.50', color: 'transparent'}],
+  [{type:'cell', text:'FB Desktop INF', color: '#ECECEC'},{type:'input', name:'fb_desktop_inf', placeholder:''},{type:'cell', text:'$8.00-$12.00', color: 'transparent'}],
+  [{type:'cell', text:'FB Mobile INF', color: '#ECECEC'},{type:'input', name:'fb_mobile_inf', placeholder:''},{type:'cell', text:'$6.00-$9.00', color: 'transparent'}],
+  [{type:'cell', text:'FB RHC', color: '#ECECEC'},{type:'input', name:'fb_rhc', placeholder:''},{type:'cell', text:'$21.00-$2.00'}],
+  [{type:'cell', text:'Mobile Retargeting', color: '#ECECEC'},{type:'input', name:'mobile Retargeting', placeholder:''},{type:'cell', text:'$2.25-$4.50'}]
 ];
 var transparentPricing = [[{type:'select', options:[{value:'false', text:'No'},{value:'true', text:'Yes'}]}]];
 var goalHeaders = ["","Retargeting","Prospecting","Facebook Dynamic Retargeting Channel Goal","Mobile"];
 var advertiserGoals = [
-  [{type:'cell', text:'Click ROAS', color: '#faf0e6'},{type:'input', name:'retargeting_click_roas', placeholder:''},{type:'input', name:'prospecting_click_roas', placeholder:''},{type:'input', name:'fb_click_roas', placeholder:''},{type:'input', name:'mobile_click_roas', placeholder:''}],
-  [{type:'cell', text:'ROAS', color: '#faf0e6'},{type:'input', name:'retargeting_roas', placeholder:''},{type:'input', name:'prospecting_roas', placeholder:''},{type:'input', name:'fb_roas', placeholder:''},{type:'input', name:'mobile_roas', placeholder:''}],
-  [{type:'cell', text:'Click eCPA', color: '#faf0e6'},{type:'input', name:'retargeting_click_ecpa', placeholder:''},{type:'input', name:'prospecting_click_ecpa', placeholder:''},{type:'input', name:'fb_click_ecpa', placeholder:''},{type:'input', name:'mobile_click_epca', placeholder:''}],
-  [{type:'cell', text:'eCPA', color: '#faf0e6'},{type:'input', name:'retargeting_ecpa', placeholder:''},{type:'input', name:'prospecting_ecpa', placeholder:''},{type:'input', name:'fb_ecpa', placeholder:''},{type:'input', name:'mobile_epca', placeholder:''}]
+  [{type:'cell', text:'Click ROAS', color: '#ECECEC'},{type:'input', name:'retargeting_click_roas', placeholder:''},{type:'input', name:'prospecting_click_roas', placeholder:''},{type:'input', name:'fb_click_roas', placeholder:''},{type:'input', name:'mobile_click_roas', placeholder:''}],
+  [{type:'cell', text:'ROAS', color: '#ECECEC'},{type:'input', name:'retargeting_roas', placeholder:''},{type:'input', name:'prospecting_roas', placeholder:''},{type:'input', name:'fb_roas', placeholder:''},{type:'input', name:'mobile_roas', placeholder:''}],
+  [{type:'cell', text:'Click eCPA', color: '#ECECEC'},{type:'input', name:'retargeting_click_ecpa', placeholder:''},{type:'input', name:'prospecting_click_ecpa', placeholder:''},{type:'input', name:'fb_click_ecpa', placeholder:''},{type:'input', name:'mobile_click_epca', placeholder:''}],
+  [{type:'cell', text:'eCPA', color: '#ECECEC'},{type:'input', name:'retargeting_ecpa', placeholder:''},{type:'input', name:'prospecting_ecpa', placeholder:''},{type:'input', name:'fb_ecpa', placeholder:''},{type:'input', name:'mobile_epca', placeholder:''}]
 ];
 var performanceHeaders=["Campaign Type","Retarget","Prospecting","FB Desktop NF","FB Moble NF","FB RHC","Mobile"];
 var performance = [
-  [{type:'cell', text:'SH Predicted Conversions', color: '#faf0e6'},{type:'output',name:'sh_pred_conv_retarget', color:'transparent'},{type:'output',name:'sh_pred_conv_prospecting',color:'transparent'},{type:'output',name:'sh_pred_conv_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_conv_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_conv_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_conv_mobile',color:'transparent'}],
-  [{type:'cell', text:'SH Predicted Attributed Conversions', color: '#faf0e6'},{type:'output',name:'sh_pred_attr_conv_retarget',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_prospecting',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_mobile',color:'transparent'}],
-  [{type:'cell', text:'SH Predicted Revenue', color: '#faf0e6'},{type:'output',name:'sh_pred_revenue_retarget',color:'transparent'},{type:'output',name:'sh_pred_revenue_prospecting',color:'transparent'},{type:'output',name:'sh_pred_revenue_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_revenue_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_revenue_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_revenue_mobile',color:'transparent'}],
-  [{type:'cell', text:'SH Predicted Attributed Revenue', color: '#faf0e6'},{type:'output',name:'sh_pred_attr_revenue_retarget',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_prospecting',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_mobile',color:'transparent'}],
-  [{type:'cell', text:'SH Click Conversions', color: '#faf0e6'},{type:'output',name:'sh_click_conv_retarget',color:'transparent'},{type:'output',name:'sh_click_conv_prospecting',color:'transparent'},{type:'output',name:'sh_click_conv_fb_desktop',color:'transparent'},{type:'output',name:'sh_click_conv_fb_mobile',color:'transparent'},{type:'output',name:'sh_click_conv_fb_rhc',color:'transparent'},{type:'output',name:'sh_click_conv_mobile',color:'transparent'}],
-  [{type:'cell', text:'SH Click Revenue', color: '#faf0e6'},{type:'output',name:'sh_click_revenue_retarget',color:'transparent'},{type:'output',name:'sh_click_revenue_prospecting',color:'transparent'},{type:'output',name:'sh_click_revenue_fb_desktop',color:'transparent'},{type:'output',name:'sh_click_revenue_fb_mobile',color:'transparent'},{type:'output',name:'sh_click_revenue_fb_rhc',color:'transparent'},{type:'output',name:'sh_click_revenue_mobile',color:'transparent'}]
+  [{type:'cell', text:'SH Predicted Conversions', color: '#ECECEC'},{type:'output',name:'sh_pred_conv_retarget', color:'transparent'},{type:'output',name:'sh_pred_conv_prospecting',color:'transparent'},{type:'output',name:'sh_pred_conv_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_conv_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_conv_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_conv_mobile',color:'transparent'}],
+  [{type:'cell', text:'SH Predicted Attributed Conversions', color: '#ECECEC'},{type:'output',name:'sh_pred_attr_conv_retarget',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_prospecting',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_attr_conv_mobile',color:'transparent'}],
+  [{type:'cell', text:'SH Predicted Revenue', color: '#ECECEC'},{type:'output',name:'sh_pred_revenue_retarget',color:'transparent'},{type:'output',name:'sh_pred_revenue_prospecting',color:'transparent'},{type:'output',name:'sh_pred_revenue_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_revenue_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_revenue_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_revenue_mobile',color:'transparent'}],
+  [{type:'cell', text:'SH Predicted Attributed Revenue', color: '#ECECEC'},{type:'output',name:'sh_pred_attr_revenue_retarget',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_prospecting',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_fb_desktop',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_fb_mobile',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_fb_rhc',color:'transparent'},{type:'output',name:'sh_pred_attr_revenue_mobile',color:'transparent'}],
+  [{type:'cell', text:'SH Click Conversions', color: '#ECECEC'},{type:'output',name:'sh_click_conv_retarget',color:'transparent'},{type:'output',name:'sh_click_conv_prospecting',color:'transparent'},{type:'output',name:'sh_click_conv_fb_desktop',color:'transparent'},{type:'output',name:'sh_click_conv_fb_mobile',color:'transparent'},{type:'output',name:'sh_click_conv_fb_rhc',color:'transparent'},{type:'output',name:'sh_click_conv_mobile',color:'transparent'}],
+  [{type:'cell', text:'SH Click Revenue', color: '#ECECEC'},{type:'output',name:'sh_click_revenue_retarget',color:'transparent'},{type:'output',name:'sh_click_revenue_prospecting',color:'transparent'},{type:'output',name:'sh_click_revenue_fb_desktop',color:'transparent'},{type:'output',name:'sh_click_revenue_fb_mobile',color:'transparent'},{type:'output',name:'sh_click_revenue_fb_rhc',color:'transparent'},{type:'output',name:'sh_click_revenue_mobile',color:'transparent'}]
 ];
 var budgetHeaders = ["Campaign Type","Retargeting","Prospecting","Facebook Dynamic Retargeting","Mobile"];
 var budget = [
-  [{type:'cell', text:'Estimated Impressions', color: '#faf0e6'},{type:'output',name:'estimated_impression_retarget',color:'transparent'},{type:'output',name:'estimated_impression_prospecting',color:'transparent'},{type:'output',name:'estimated_impression_fb',color:'transparent'},{type:'output',name:'estimated_impression_mobile',color:'transparent'}],
-  [{type:'cell', text:'Budget Recommendation', color: '#faf0e6'},{type:'output',name:'budget_retarget', color:'#ffe4e1'},{type:'output',name:'budget_prospecting', color:'#ffe4e1'},{type:'output',name:'budget_fb', color:'#ffe4e1'},{type:'output',name:'budget_mobile', color:'#ffe4e1'}]
+  [{type:'cell', text:'Estimated Impressions', color: '#ECECEC'},{type:'output',name:'estimated_impression_retarget',color:'transparent'},{type:'output',name:'estimated_impression_prospecting',color:'transparent'},{type:'output',name:'estimated_impression_fb',color:'transparent'},{type:'output',name:'estimated_impression_mobile',color:'transparent'}],
+  [{type:'cell', text:'Budget Recommendation', color: '#ECECEC'},{type:'output',name:'budget_retarget', color:'#ffe4e1'},{type:'output',name:'budget_prospecting', color:'#ffe4e1'},{type:'output',name:'budget_fb', color:'#ffe4e1'},{type:'output',name:'budget_mobile', color:'#ffe4e1'}]
 ];
 
 var Index = React.createClass({
