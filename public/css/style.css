@@ -55,7 +55,7 @@ td {
   background-color: #F4F4F4;
   float:left;
   width:49%;
-  margin-right:5px;
+  margin-right:10px;
   margin-bottom:15px;
   padding:15px;
   border: 1px;
@@ -68,9 +68,9 @@ td {
 .div-right-panel{
   background-color: #F4F4F4;
   float:right;
-  width:49%;
-  margin-left:5px;
+  margin-left:10px;
   margin-bottom:15px;
+  width:49%;
   padding:15px;
   border: 1px;
   border-style: solid;

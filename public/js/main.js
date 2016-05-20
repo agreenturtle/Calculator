@@ -25103,25 +25103,21 @@ var Index = React.createClass({
       React.createElement('br', null),
       React.createElement(
         'div',
-        { className: 'box clearfix col-md-12' },
+        { className: 'div-advertiser-info' },
+        React.createElement(CalcTable, { table: advertiserInfo, headers: [], size: 'col-md-12', table_name: 'Advertiser Info' })
+      ),
+      React.createElement(
+        'div',
+        { className: 'div-right-panel clearfix' },
         React.createElement(
           'div',
-          { className: 'div-advertiser-info' },
-          React.createElement(CalcTable, { table: advertiserInfo, headers: [], size: 'col-md-12', table_name: 'Advertiser Info' })
+          { className: 'div-campaign-rate-card' },
+          React.createElement(CalcTable, { table: rateCard, headers: rateHeaders, size: 'col-md-12', table_name: 'Campaign Usage Rate Card' })
         ),
         React.createElement(
           'div',
-          { className: 'div-right-panel clearfix' },
-          React.createElement(
-            'div',
-            { className: 'div-campaign-rate-card' },
-            React.createElement(CalcTable, { table: rateCard, headers: rateHeaders, size: 'col-md-12', table_name: 'Campaign Usage Rate Card' })
-          ),
-          React.createElement(
-            'div',
-            { className: 'div-transparent-pricing' },
-            React.createElement(CalcTable, { table: transparentPricing, headers: [], size: 'col-md-12', table_name: 'Transparent Pricing' })
-          )
+          { className: 'div-transparent-pricing' },
+          React.createElement(CalcTable, { table: transparentPricing, headers: [], size: 'col-md-12', table_name: 'Transparent Pricing' })
         )
       ),
       React.createElement(
