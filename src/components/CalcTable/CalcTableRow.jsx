@@ -17,7 +17,7 @@ var CalcTableRow = React.createClass({
         return <CalcTableSelectCell options={obj.options} />
       }
       else if(obj.type == "output"){
-        return <CalcTableOutputCell color={obj.color} />
+        return <CalcTableOutputCell name={obj.name} color={obj.color} />
       }
       else{
         return <td></td>;

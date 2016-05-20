@@ -15,7 +15,7 @@ var CalcTableOutputCell = React.createClass({
       'backgroundColor': this.props.color
     };
     return(
-      <td style={tdStyle}>
+      <td name={this.props.name} style={tdStyle}>
         {this.state.value}
       </td>
     );
