@@ -24,7 +24,7 @@ th {
 }
 
 header {
-  background-color: black;
+  background-color: #31343F;
   color: white;
   height:50px;
   padding:10px;
@@ -52,7 +52,7 @@ td {
 }
 
 .div-advertiser-info{
-  background-color: white;
+  background-color: #F4F4F4;
   float:left;
   width:49%;
   margin-right:5px;
@@ -66,7 +66,7 @@ td {
 }
 
 .div-right-panel{
-  background-color:white;
+  background-color: #F4F4F4;
   float:right;
   width:49%;
   margin-left:5px;
@@ -91,7 +91,7 @@ td {
 }
 
 .div-full{
-  background-color:white;
+  background-color: #F4F4F4;
   border: 1px;
   border-style: solid;
   margin-top:15px;
