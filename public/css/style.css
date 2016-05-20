@@ -1,0 +1,99 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background-color: #CCCCCC!important;
+  font-family: Oswald, sans-serif;
+}
+
+input {
+  background-color:transparent;
+  text-align: center;
+}
+
+th {
+  background-color: #708090;
+  text-align: center!important;
+  color: white;
+  word-wrap: break-word;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height:50px;
+  padding:10px;
+  position: fixed;
+  width:100%;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+
+td {
+  text-align: center;
+}
+
+.content-body {
+  margin-top: 50px;
+}
+
+.title{
+  color: rgb(178,35,39);
+}
+
+.div-advertiser-info{
+  background-color: white;
+  float:left;
+  width:49%;
+  margin-right:5px;
+  margin-bottom:10px;
+  padding:15px;
+  border: 1px;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 25px;
+}
+
+.div-right-panel{
+  background-color:white;
+  float:right;
+  width:49%;
+  margin-left:5px;
+  margin-bottom:10px;
+  padding:15px;
+  border: 1px;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 25px;
+}
+
+.div-campaign-rate-card{
+  background-color:transparent;
+  float:top;
+
+}
+
+.div-transparent-pricing{
+  background-color:transparent;
+  float: bottom;
+}
+
+.div-full{
+  background-color:white;
+  border: 1px;
+  border-style: solid;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:15px;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 25px;
+}
+
+.table-name{
+  color: rgb(178,35,39);
+  text-transform: uppercase;
+  letter-spacing:1px;
+  text-align: center;
+}
