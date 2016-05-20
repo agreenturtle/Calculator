@@ -25103,7 +25103,7 @@ var Index = React.createClass({
       React.createElement('br', null),
       React.createElement(
         'div',
-        { className: 'box' },
+        { className: 'box clearfix col-md-12' },
         React.createElement(
           'div',
           { className: 'div-advertiser-info' },
@@ -25111,7 +25111,7 @@ var Index = React.createClass({
         ),
         React.createElement(
           'div',
-          { className: 'div-right-panel' },
+          { className: 'div-right-panel clearfix' },
           React.createElement(
             'div',
             { className: 'div-campaign-rate-card' },

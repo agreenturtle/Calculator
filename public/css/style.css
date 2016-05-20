@@ -12,6 +12,10 @@ input {
   text-align: center;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 th {
   background-color: #708090;
   text-align: center!important;
@@ -35,6 +39,10 @@ td {
   text-align: center;
 }
 
+.box {
+  display: inline-block;
+}
+
 .content-body {
   margin-top: 50px;
 }
@@ -48,12 +56,13 @@ td {
   float:left;
   width:49%;
   margin-right:5px;
-  margin-bottom:10px;
+  margin-bottom:15px;
   padding:15px;
   border: 1px;
   border-style: solid;
   box-shadow: 10px 10px 5px #888888;
   border-radius: 25px;
+  overflow: auto
 }
 
 .div-right-panel{
@@ -61,12 +70,13 @@ td {
   float:right;
   width:49%;
   margin-left:5px;
-  margin-bottom:10px;
+  margin-bottom:15px;
   padding:15px;
   border: 1px;
   border-style: solid;
   box-shadow: 10px 10px 5px #888888;
   border-radius: 25px;
+  overflow: auto
 }
 
 .div-campaign-rate-card{
@@ -84,11 +94,12 @@ td {
   background-color:white;
   border: 1px;
   border-style: solid;
-  margin-top:10px;
-  margin-bottom:10px;
+  margin-top:15px;
+  margin-bottom:15px;
   padding:15px;
   box-shadow: 10px 10px 5px #888888;
   border-radius: 25px;
+  overflow: auto
 }
 
 .table-name{

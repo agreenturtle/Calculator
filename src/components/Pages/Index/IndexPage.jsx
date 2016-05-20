@@ -54,11 +54,11 @@ var Index = React.createClass({
         <p> Fill Out values in Yellow below. DO NOT TOUCH ANY OTHER PORTION. Budgets are located in RED at bottom </p>
         <p> **This tool is to be used after the pixel has been on the advertisers site for 30 days, or using information about MUVs and Site Conversion Rate from the advertiser or online source.** </p>
         <br />
-        <div className="box">
+        <div className="box clearfix col-md-12">
           <div className="div-advertiser-info">
             <CalcTable table={advertiserInfo} headers={[]} size="col-md-12" table_name="Advertiser Info" />
           </div>
-          <div className="div-right-panel">
+          <div className="div-right-panel clearfix">
             <div className="div-campaign-rate-card">
               <CalcTable table={rateCard} headers={rateHeaders} size="col-md-12" table_name="Campaign Usage Rate Card" />
             </div>
