@@ -4,7 +4,7 @@
 
 body {
   background-color: #E9E9E9!important;
-  font-family: arial, sans-serif;
+  font-family: arial, sans-serif!important;
 }
 
 input {
