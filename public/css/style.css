@@ -4,7 +4,7 @@
 
 body {
   background-color: #E9E9E9!important;
-  font-family: arial, sans-serif!important;
+  font-family: arial!important;
 }
 
 input {
@@ -60,7 +60,7 @@ td {
   padding:15px;
   border: 1px;
   border-style: solid;
-  box-shadow: 10px 10px 5px #888888;
+  border-color: #CCCCCC;
   border-radius: 25px;
   overflow: auto
 }
@@ -74,7 +74,7 @@ td {
   padding:15px;
   border: 1px;
   border-style: solid;
-  box-shadow: 10px 10px 5px #888888;
+  border-color: #CCCCCC;
   border-radius: 25px;
   overflow: auto
 }
@@ -97,7 +97,7 @@ td {
   margin-top:15px;
   margin-bottom:15px;
   padding:15px;
-  box-shadow: 10px 10px 5px #888888;
+  border-color: #CCCCCC;
   border-radius: 25px;
   overflow: auto
 }
